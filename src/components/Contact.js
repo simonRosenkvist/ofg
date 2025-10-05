@@ -1,5 +1,8 @@
 import './contact.css'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import img1 from '../assets/group1.jpg';
+import img2 from '../assets/w-striking5.jpg';
+import img3 from '../assets/grappling4.jpg'
 
 function Contact() {
     return (
@@ -39,9 +42,9 @@ function Contact() {
                 </div>
             </div>
             <div className="images-wrapper mb-20">
-                    <img className="image-item" src='./group1.jpg'></img>
-                    <img className="image-item" src='./w-striking5.jpg'></img>
-                    <img className="image-item" src='./grappling4.jpg'></img>
+                    <img className="image-item" src={img1}></img>
+                    <img className="image-item" src={img2}></img>
+                    <img className="image-item" src={img3}></img>
             </div>
         </div>
     );

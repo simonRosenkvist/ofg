@@ -1,4 +1,5 @@
 import './getStarted.css';
+import img1 from '../assets/w-striking4.jpg';
 
 function GetStarted() {
     return (
@@ -38,7 +39,7 @@ function GetStarted() {
                 <li><span>Max två prova-på pass per person.</span></li>
             </ul>
 
-            <img className='startingImage' src='./w-striking4.jpg'></img>
+            <img className='startingImage' src={img1}></img>
 
             <h2 className='center startingHeader'>Övrig information</h2>
 
