@@ -1,0 +1,47 @@
+.schedule {
+    min-width: 320px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .day h2 {
+    background: #111;
+    color: #b8893d;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .day ul {
+    list-style: none;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    background: #222;
+    border-radius: 4px;
+  }
+  
+  .day li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+  }
+  
+  .day li:last-child {
+    border-bottom: none;
+  }
+  
+  .time {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .class-name {
+    color: #b8893d;
+  }
+
+  .day.open h2 {
+    background-color: #b8893d;
+    color: #000;
+  }
+  

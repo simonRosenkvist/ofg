@@ -1,0 +1,12 @@
+.membership {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.memberImage {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: grayscale(0.2);;
+}

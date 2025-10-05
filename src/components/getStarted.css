@@ -1,0 +1,25 @@
+.getStarted {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+.startingHeader {
+    margin-top: 20px;
+}
+
+.startingImage {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    filter: grayscale(0.2);
+}
+
+li {
+    list-style: none;
+}

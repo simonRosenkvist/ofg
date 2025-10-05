@@ -1,0 +1,44 @@
+.courses-ul {
+    list-style: none;
+    text-align: center;
+}
+
+.courses-ul li {
+    font-size: 1.2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.course-description {
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.classes-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #000;
+    color: white;
+}
+
+.classes-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: inherit;
+    background-size: cover;
+    background-position: 20% 25%;
+    background-repeat: no-repeat;
+    filter: grayscale(100%) brightness(0.6);
+    z-index: 0;
+}
+
+.classes-container > * {
+    position: relative;
+    z-index: 1;
+}
