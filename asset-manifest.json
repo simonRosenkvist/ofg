@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ofg/static/css/main.2bcc700a.css",
+    "main.js": "/ofg/static/js/main.8acdb38e.js",
+    "static/js/453.67f1f458.chunk.js": "/ofg/static/js/453.67f1f458.chunk.js",
+    "static/media/kids1.jpg": "/ofg/static/media/kids1.d1019c473f27467cb327.jpg",
+    "static/media/shirt.jpg": "/ofg/static/media/shirt.c6ffba5dd70ecedab3f9.jpg",
+    "static/media/striking1.jpg": "/ofg/static/media/striking1.6dea6843dd1e096330b1.jpg",
+    "static/media/striking2.jpg": "/ofg/static/media/striking2.15fd15efc97f413d79c0.jpg",
+    "static/media/grappling1.jpg": "/ofg/static/media/grappling1.8bf6c9d731b994323098.jpg",
+    "static/media/w-mood.jpg": "/ofg/static/media/w-mood.0cc0a32a86f9285e63a8.jpg",
+    "static/media/groundpound.jpg": "/ofg/static/media/groundpound.bfd8360161e6e846a5f6.jpg",
+    "static/media/patrik.jpg": "/ofg/static/media/patrik.9e3264f21207175d7ecf.jpg",
+    "static/media/w-striking3.jpg": "/ofg/static/media/w-striking3.49641c8231220d9198e8.jpg",
+    "static/media/logo.jpg": "/ofg/static/media/logo.ae4f7ed18ab29d11ccf1.jpg",
+    "index.html": "/ofg/index.html",
+    "main.2bcc700a.css.map": "/ofg/static/css/main.2bcc700a.css.map",
+    "main.8acdb38e.js.map": "/ofg/static/js/main.8acdb38e.js.map",
+    "453.67f1f458.chunk.js.map": "/ofg/static/js/453.67f1f458.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bcc700a.css",
+    "static/js/main.8acdb38e.js"
+  ]
+}
