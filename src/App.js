@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 import Home from "./components/Home";
