@@ -1,79 +1,85 @@
 .about-content {
-    max-width: 900px;
-    margin: 0 auto;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .long-text {
-    line-height: 2rem;
+  line-height: 2rem;
 }
 
 .images-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
-  
+
 .image-item {
-    width: 30%;
-    max-width: 250px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 30%;
+  max-width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news-bubble {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 4px solid #b8893d; /* accent color – can tweak */
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+  max-width: 700px;
+  color: #f5f5f5;
+  font-size: 1rem;
+  line-height: 1.6;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255, 59, 59, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.news-bubble:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(255, 59, 59, 0.2);
+}
+
+.news-bubble span a {
+  color: #b8893d;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 6px;
+  transition: color 0.2s ease;
+}
+
+.news-bubble span a:hover {
+  color: #fff;
+}
+
+.news-bubble span {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Optional: subtle glowing accent on the border */
+.news-bubble::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255,59,59,0.3), transparent);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
 }
   
-.news-bubble {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-left: 4px solid #b8893d; /* accent color – can tweak */
-    border-radius: 12px;
-    padding: 1rem 1.5rem;
-    margin: 1rem auto;
-    max-width: 700px;
-    color: #f5f5f5;
-    font-size: 1rem;
-    line-height: 1.6;
-    position: relative;
-    box-shadow: 0 0 10px rgba(255, 59, 59, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+@media (max-width: 768px) {
+  .news-bubble {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  
-  .news-bubble:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(255, 59, 59, 0.2);
-  }
-  
-  .news-bubble span a {
-    color: #b8893d;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 6px;
-    transition: color 0.2s ease;
-  }
-  
-  .news-bubble span a:hover {
-    color: #fff;
-  }
-  
-  .news-bubble span {
-    display: inline-block;
-    text-align: left;
-  }
-  
-  /* Optional: subtle glowing accent on the border */
-  .news-bubble::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    padding: 1px;
-    background: linear-gradient(135deg, rgba(255,59,59,0.3), transparent);
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    pointer-events: none;
-  }
-  
+}

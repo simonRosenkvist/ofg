@@ -1,4 +1,4 @@
-import img from '../assets/win3.jpg';
+import img from '../assets/win4.jpg';
 
 function Home () {
     return (

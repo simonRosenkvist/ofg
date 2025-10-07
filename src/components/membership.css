@@ -1,9 +1,11 @@
 .membership {
     max-width: 900px;
+    width: -webkit-fill-available;
     margin: 0 auto;
 }
 .memberImage {
     max-width: 700px;
+    width: -webkit-fill-available;
     display: block;
     margin: 0 auto;
     margin-top: 20px;

@@ -150,6 +150,7 @@ nav a:hover {
 
 .big-img {
   max-width: 900px;
+  width: -webkit-fill-available;
   display: block;
   margin: 0 auto;
   height: auto;
