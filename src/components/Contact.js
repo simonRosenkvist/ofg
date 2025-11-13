@@ -1,7 +1,7 @@
 import './contact.css'
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import img1 from '../assets/group1.jpg';
-import img2 from '../assets/w-striking5.jpg';
+import img2 from '../assets/w-striking3.jpg';
 import img3 from '../assets/grappling4.jpg'
 
 function Contact() {

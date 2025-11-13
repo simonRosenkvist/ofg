@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./classes.css";
-import kids from '../assets/kids1.jpg';
+import kids from '../assets/group-kids.jpg';
 import striking from '../assets/striking2.jpg';
 import grappling from '../assets/grappling1.jpg';
 import striking2 from '../assets/striking1.jpg';
-import groundPound from '../assets/groundpound.jpg';
-import mood from '../assets/w-mood.jpg';
+import groundPound from '../assets/win5.jpg';
+import mood from '../assets/w-striking1.jpg';
 import logo from '../assets/logo.jpg';
 
 function Classes() {
