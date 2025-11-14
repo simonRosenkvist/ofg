@@ -149,8 +149,8 @@ nav a:hover {
 }
 
 .big-img {
+  width: 100%;
   max-width: 900px;
-  width: -webkit-fill-available;
   display: block;
   margin: 0 auto;
   height: auto;
@@ -229,5 +229,60 @@ nav a:hover {
 
   .text-content {
     padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+}
+
+/* --- Mobile Fixes --- */
+
+/* Prevent horizontal zoom-out caused by wide content */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Better mobile typography */
+@media (max-width: 480px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.25rem; }
+  p, li { font-size: 0.95rem; }
+}
+
+/* Responsive images */
+.big-img {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto;
+}
+
+/* About page images */
+.image-item {
+  flex: 1 1 45%;
+  max-width: 250px;
+}
+
+@media (max-width: 600px) {
+  .image-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }

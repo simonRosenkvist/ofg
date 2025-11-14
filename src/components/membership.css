@@ -1,14 +1,27 @@
 .membership {
     max-width: 900px;
-    width: -webkit-fill-available;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1rem; /* mobile-friendly horizontal spacing */
 }
+
+.membership li {
+    list-style: none;
+}
+
 .memberImage {
     max-width: 700px;
-    width: -webkit-fill-available;
+    width: 100%;
     display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    filter: grayscale(0.2);;
+    margin: 20px auto;
+    filter: grayscale(0.2);
+    border-radius: 8px; /* optional but looks good */
+}
+
+/* Mobile tuning */
+@media (max-width: 480px) {
+    .memberImage {
+        margin: 15px auto;
+        max-width: 100%;
+    }
 }

@@ -1,6 +1,6 @@
 .schedule {
-  min-width: 320px;
-  width: 40%;
+  max-width: 600px;       /* prevents being too wide on desktop */
+  width: 100%;            /* fills available space but stays centered */
   margin: 0 auto;
   padding: 1rem;
 }
@@ -8,34 +8,35 @@
 .day h2 {
   background: #111;
   color: #b8893d;
-  padding: 0.75rem 1rem;
-  margin: 0.5rem 0;
+  padding: 1rem;          /* slightly larger tap target */
+  margin: 0.75rem 0;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
+  font-size: 1.25rem;
 }
 
 .day ul {
   list-style: none;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   margin: 0;
   background: #222;
-  border-radius: 4px;
+  border-radius: 6px;
 }
-  
+
 .day li {
-  padding: 0.5rem 0;
+  padding: 0.75rem 0;
   border-bottom: 1px solid #444;
 }
-  
+
 .day li:last-child {
   border-bottom: none;
 }
-  
+
 .time {
   font-weight: bold;
   color: #fff;
 }
-  
+
 .class-name {
   color: #b8893d;
 }
@@ -44,10 +45,20 @@
   background-color: #b8893d;
   color: #000;
 }
-  
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .schedule {
-    margin: 0;
-    width: 100%;
+    padding: 1.25rem 1rem;  /* consistent spacing */
+    margin: 0 auto;
+  }
+
+  .day h2 {
+    font-size: 1.1rem;
+    padding: 0.9rem;
+  }
+
+  .day li {
+    padding: 0.6rem 0;
   }
 }

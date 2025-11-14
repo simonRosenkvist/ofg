@@ -1,4 +1,4 @@
-import img from '../assets/mainimage.jpg';
+import img from '../assets/wining.jpg';
 
 function Home () {
     return (

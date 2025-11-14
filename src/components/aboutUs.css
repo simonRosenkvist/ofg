@@ -16,10 +16,17 @@
 }
 
 .image-item {
-  width: 30%;
+  flex: 1 1 45%;
   max-width: 250px;
   border-radius: 8px;
   object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .image-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
 }
 
 .news-bubble {
@@ -81,5 +88,12 @@
   .news-bubble {
     margin-left: 20px;
     margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav a {
+    padding: 1rem 1.25rem;
+    font-size: 1.1rem;
   }
 }

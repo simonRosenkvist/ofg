@@ -1,44 +1,62 @@
 .courses-ul {
-    list-style: none;
-    text-align: center;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .courses-ul li {
-    font-size: 1.2rem;
-    cursor: pointer;
-    user-select: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  margin: 0.5rem 0;
 }
 
+/* Responsive text content */
 .course-description {
-    color: #fff;
-    max-width: 900px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  padding: 0 1rem; /* Prevent edge-to-edge text on mobile */
 }
 
+/* Layout container */
 .classes-container {
-    position: relative;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: #000;
-    color: white;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #000;
+  color: white;
+  overflow: hidden; /* Prevent background from expanding layout width */
 }
 
+/* Background overlay */
 .classes-container::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: inherit;
-    background-size: cover;
-    background-position: 20% 25%;
-    background-repeat: no-repeat;
-    filter: grayscale(100%) brightness(0.6);
-    z-index: 0;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center; /* more reliable on mobile */
+  background-repeat: no-repeat;
+  filter: grayscale(100%) brightness(0.6);
+  z-index: 0;
 }
 
+/* Content sits above background */
 .classes-container > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 480px) {
+  .courses-ul li {
+    font-size: 1rem; /* slightly smaller for thumb-friendly spacing */
+  }
+
+  .course-description {
+    padding: 0 1.25rem; /* extra-readable text on small phones */
+  }
 }
