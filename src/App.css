@@ -13,10 +13,10 @@ body {
 }
 
 .subheader {
-    text-align: center;
+  text-align: center;
 }
 
-/* Ensure flexible widths on root containers */
+/* Flexible root containers */
 html, body, #root, .App {
   width: 100%;
   max-width: 100%;
@@ -45,7 +45,6 @@ body, p, li {
   line-height: 1.6;
 }
 
-/* Example sizes (adjust to taste) */
 h1 { font-size: 2.5rem; text-align: center; margin-bottom: 0; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
@@ -86,7 +85,9 @@ nav.open ul {
   display: flex;
 }
 
-nav li { margin: 0.25rem 0; }
+nav li {
+  margin: 0.25rem 0;
+}
 
 nav a {
   display: block;
@@ -120,7 +121,7 @@ nav a:hover {
   margin: 20px auto;
   padding: 0 1rem;
   width: 100%;
-  max-width: 100%; /* fluid on mobile */
+  max-width: 100%;
 }
 
 .big-img {
@@ -198,13 +199,6 @@ nav a:hover {
 
 /* Mobile fixes */
 @media (max-width: 768px) {
-  html, body, #root, .App {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    overflow-x: hidden;
-  }
-
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
   h3 { font-size: 1.25rem; }
@@ -213,7 +207,7 @@ nav a:hover {
   .text-content, .big-img { width: 100%; max-width: 100%; }
 }
 
-/* About page images */
+/* About / Gallery images */
 .image-item {
   flex: 1 1 45%;
   max-width: 250px;
