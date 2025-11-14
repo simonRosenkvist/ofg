@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    flex-wrap: wrap; /* mobile friendly */
+    flex-wrap: wrap; /* mobile-friendly */
     margin-top: 2rem;
     padding: 0 1rem; /* prevents edge-touch on small screens */
 }
@@ -18,9 +18,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    width: 120px;
-    height: 120px;
+
+    width: 100%;          /* fluid on mobile */
+    max-width: 120px;     /* desktop cap */
+    height: auto;         /* maintain aspect ratio */
+    aspect-ratio: 1 / 1;  /* keep square shape */
 }
 
 .social-card:hover {
@@ -54,17 +56,15 @@
 }
 
 .image-item {
-    width: clamp(120px, 45%, 250px); /* prevents tiny images + prevents overflow */
+    width: clamp(120px, 45%, 250px); /* fluid scaling */
     border-radius: 8px;
     object-fit: cover;
 }
 
 /* Mobile adjustments */
 @media (max-width: 480px) {
-
     .social-card {
-        width: 100px;
-        height: 100px;
+        max-width: 100px;
         padding: 1.25rem;
     }
 
@@ -74,10 +74,18 @@
 
     .image-item {
         width: 100%;
-        max-width: 300px; /* one per row, readable */
+        max-width: 300px; /* single column for readability */
     }
 
     .large-mb {
         margin-bottom: 30px;
+    }
+}
+
+/* Desktop-only widths */
+@media (min-width: 768px) {
+    .social-card {
+        max-width: 120px;
+        height: 120px;
     }
 }

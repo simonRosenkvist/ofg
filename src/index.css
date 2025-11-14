@@ -1,3 +1,4 @@
+/* Reset and base fonts */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,19 +6,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6; /* better readability on mobile */
 }
 
+/* Enforce flexible widths on html/body/root */
 html, body {
+  width: 100%;
   max-width: 100%;
+  min-width: 0; /* important for Samsung/Android */
   overflow-x: hidden;
 }
 
 #root, .App {
   width: 100%;
   max-width: 100%;
+  min-width: 0;
 }
 
+/* Box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Typography for code blocks */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Optional: force images and videos to never overflow */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: smooth scaling on small devices */
+html {
+  -webkit-text-size-adjust: 100%; /* prevent font scaling on Android */
 }

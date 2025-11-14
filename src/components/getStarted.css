@@ -1,8 +1,8 @@
 .getStarted {
-    max-width: 900px;
-    width: 100%;
+    width: 100%;          /* fluid width */
+    max-width: 100%;      /* prevent desktop scaling on mobile */
     margin: 0 auto;
-    padding: 0 1rem; /* mobile friendly */
+    padding: 0 1rem;      /* mobile-friendly horizontal spacing */
 }
 
 .center {
@@ -13,16 +13,20 @@
     margin-top: 20px;
 }
 
+.subheader {
+    text-align: center;
+}
+
 .startingImage {
-    max-width: 700px;
-    width: 100%;
+    width: 100%;          /* fluid width */
+    max-width: 100%;      /* prevent overflow on mobile */
     display: block;
     margin: 20px auto;
     filter: grayscale(0.2) brightness(0.95);
-    border-radius: 8px; /* optional but improves look */
+    border-radius: 8px;   /* optional styling */
 }
 
-/* Only remove list styling *inside this component* */
+/* Only remove list styling inside this component */
 .getStarted li {
     list-style: none;
 }
@@ -33,5 +37,15 @@
         max-width: 100%;
         margin-top: 15px;
         margin-bottom: 15px;
+    }
+}
+
+/* Desktop-only widths */
+@media (min-width: 768px) {
+    .getStarted {
+        max-width: 900px;    /* only constrain on desktop */
+    }
+    .startingImage {
+        max-width: 700px;    /* only constrain on desktop */
     }
 }

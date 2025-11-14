@@ -1,6 +1,6 @@
 .schedule {
-  max-width: 600px;       /* prevents being too wide on desktop */
-  width: 100%;            /* fills available space but stays centered */
+  width: 100%;       /* fills available space */
+  max-width: 100%;   /* prevent desktop scaling on mobile */
   margin: 0 auto;
   padding: 1rem;
 }
@@ -8,7 +8,7 @@
 .day h2 {
   background: #111;
   color: #b8893d;
-  padding: 1rem;          /* slightly larger tap target */
+  padding: 1rem;          
   margin: 0.75rem 0;
   cursor: pointer;
   border-radius: 6px;
@@ -49,7 +49,9 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .schedule {
-    padding: 1.25rem 1rem;  /* consistent spacing */
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
     margin: 0 auto;
   }
 
@@ -60,5 +62,12 @@
 
   .day li {
     padding: 0.6rem 0;
+  }
+}
+
+/* Optional: desktop-only max-width */
+@media (min-width: 768px) {
+  .schedule {
+    max-width: 600px; /* only applies on wider screens */
   }
 }

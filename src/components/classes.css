@@ -15,9 +15,10 @@
 /* Responsive text content */
 .course-description {
   color: #fff;
-  max-width: 900px;
+  width: 100%;        /* fluid width */
+  max-width: 100%;    /* prevent desktop scaling on mobile */
   margin: 0 auto 20px auto;
-  padding: 0 1rem; /* Prevent edge-to-edge text on mobile */
+  padding: 0 1rem;    /* mobile padding */
 }
 
 /* Layout container */
@@ -29,7 +30,7 @@
   justify-content: flex-start;
   background: #000;
   color: white;
-  overflow: hidden; /* Prevent background from expanding layout width */
+  overflow: hidden; /* Prevent horizontal scroll */
 }
 
 /* Background overlay */
@@ -39,7 +40,7 @@
   inset: 0;
   background: inherit;
   background-size: cover;
-  background-position: center; /* more reliable on mobile */
+  background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%) brightness(0.6);
   z-index: 0;
@@ -51,12 +52,20 @@
   z-index: 1;
 }
 
+/* Mobile adjustments */
 @media (max-width: 480px) {
   .courses-ul li {
-    font-size: 1rem; /* slightly smaller for thumb-friendly spacing */
+    font-size: 1rem; /* thumb-friendly */
   }
 
   .course-description {
-    padding: 0 1.25rem; /* extra-readable text on small phones */
+    padding: 0 1.25rem; /* extra-readable text */
+  }
+}
+
+/* Desktop-only widths */
+@media (min-width: 768px) {
+  .course-description {
+    max-width: 900px;
   }
 }

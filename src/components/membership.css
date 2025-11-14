@@ -1,8 +1,12 @@
 .membership {
-    max-width: 900px;
-    width: 100%;
+    width: 100%;          /* fluid width */
+    max-width: 100%;      /* prevent desktop scaling on mobile */
     margin: 0 auto;
-    padding: 0 1rem; /* mobile-friendly horizontal spacing */
+    padding: 0 1rem;      /* mobile-friendly horizontal spacing */
+}
+
+.subheader {
+    text-align: center;
 }
 
 .membership li {
@@ -10,12 +14,12 @@
 }
 
 .memberImage {
-    max-width: 700px;
-    width: 100%;
+    width: 100%;          /* fluid width */
+    max-width: 100%;      /* prevent overflow on mobile */
     display: block;
     margin: 20px auto;
     filter: grayscale(0.2);
-    border-radius: 8px; /* optional but looks good */
+    border-radius: 8px;   /* optional styling */
 }
 
 /* Mobile tuning */
@@ -23,5 +27,15 @@
     .memberImage {
         margin: 15px auto;
         max-width: 100%;
+    }
+}
+
+/* Desktop-only widths */
+@media (min-width: 768px) {
+    .membership {
+        max-width: 900px;   /* only constrain on larger screens */
+    }
+    .memberImage {
+        max-width: 700px;   /* only constrain on desktop */
     }
 }
