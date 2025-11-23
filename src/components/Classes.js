@@ -4,7 +4,7 @@ import kids from '../assets/group-kids.jpg';
 import striking from '../assets/striking2.jpg';
 import grappling from '../assets/grappling1.jpg';
 import striking2 from '../assets/striking1.jpg';
-import groundPound from '../assets/win5.jpg';
+import team from '../assets/team.jpeg';
 import mood from '../assets/w-striking1.jpg';
 import logo from '../assets/logo.jpg';
 
@@ -24,27 +24,37 @@ function Classes() {
 
   const courses = [
     {   
-      title: "MMA nybörjare", 
-      desc: "Passar för dig som vill testa MMA från grunden. Ingen tidigare erfarenhet krävs. Dessa pass passar också dig som tränat någon termin och vill träna mer på grunderna. Träningen består av striking, och grappling. För att träna MMA förutsätter vi att du tränar både striking-passen såväl som grappling-passen då dessa tillsammans utgör grunden för MMA. Inga åskådare är tillåtna under passen. Detta gäller även familjemedlemmar/vänner.",
+      title: `MMA nybörjare`, 
+      desc: [
+        'Från året man fyller 15 år, ingen förkunskap krävs. En kurs där man får lära sig grunderna i MMA. Variationsrik och allsidig träning för dig som inte har någon tidigare erfarenhet av MMA och/eller för dig som tränat 1 termin och vill ha mer grunder. Striking, brottning och grappling. Vårt upplägg för MMA kräver att du tränar både striking-passen och grappling-passen utöver MMA passen, då dessa lägger en grund tillsammans.',
+        'MMA Striking=kickboxning Grappling = Lås, grepp, brottning Prova på passen gäller måndag-torsdag. Öppen matta och söndagens pass kräver medlemskap. De första 2 veckorna av terminen innehåller mycket introduktion. Inga åskådare under passen, detta pga vi har begränsat antal platser som måste prioteras till tränande som väntar in sina pass. Gäller även familjemedlemmar/vänner.',
+        'DETTA BEHÖVER DU FÖR ATT TRÄNA MMA; Klädsel: Träningskläder utan dragkedjor eller för stora fickor. Vi tränar barfota. Utrustning: MMA handskar, benskydd och tandskydd. Suspensoar för killar rekommenderas. Amatör handskar används, ej pro handskar. Vi säljer utrustning från Nordic Fighter & Earniitsports. Kan köpas & provas på plats. Använd utrustning går ej att returnera. Vid prova på behöver man ej utrustning. När man bestämt sig för att fortsätta behöver man investera i utrustning.'
+      ],
       imgSrc: kids
     },
     { title: "MMA fortsättare",
-        desc: "För dig som tränat ett tag och vill fortsätta utvecklas. Du som tränar här förväntas ha åtminstone grundläggande förståelse för både striking och grappling. Normalt krävs det att du har varit med en eller två terminer i nybörjargruppen, men i slutändan är det din tränare som avgör ifall du är redo att gå med i fortsättargruppen.",
+        desc: ["Denna grupp är till för dig som har tidigare erfarenhet av MMA, eller har tidigare erfarenhet av striking och grappling. Behärska alla distanser är krav. Tränare avgör vid vilken termin man flyttas från nybörjare upp till denna grupp. Full utrustning krävs i denna grupp."],
         imgSrc: striking },
     { title: "MMA team", 
-        desc: "I denna gruppen tränar de fighters som tävlar i amatör- eller proffsmatch eller de som snart ska gå match, samt inbjudna fighters. Det är vår huvudcoach i MMA som avgör vilka som får träna i denna grupp.", 
-        imgSrc: groundPound 
+        desc: ["I denna grupp tränar de som tävlar i MMA eller som ska tävla inom snar framtid, samt inbjudna. C, B & A-KLASS, samt Professionella fighters. Vår huvudcoach i MMA avgör vilka som tränar i denna grupp. Pro and Amatuer team. For questions contact us via mail orebrofightgym@outlook.com"], 
+        imgSrc: team 
     },
     { title: "Grappling", 
-        desc: "Grappling är ett samlingsnamn för alla olika stilar där man brottas både stående och på golvet i så kallad markkamp. Utövarna gör olika former av grepp, strypningar och lås. Brasiliansk jiu-jitsu och submission wrestling är två av de vanligaste sporterna inom grapplinggenren. I vår nybörjargrupp tränar vi på grundläggande tekniker och ingen förkunskap krävs.", 
+        desc: ['NYBÖRJARE Lås, grepp ,strypningar och brottning. Ett pass även för de som tränar MMA, då grappling är en del i MMA. Ingen förkunskap krävs i denna grupp.',
+           'FORTSÄTTNINGSGRUPP-AVANCERADGRUPP Denna grupp är till för dig som har tidigare erfarenhet av grappling. Minst 1 termin nybörarkurs eller tidigare erfarenhet från nogi eller bjj.', 
+           'Vad är grappling? Grappling är ett samlingsnamn för alla olika stilar där man brottas både stående och markkamp och gör olika former av grepp, strypningar och lås. Genom olika grepptekniker kan kast, strypningar och olika ledlås utföras. Brasiliansk jiu-jitsu och submission wrestling tillhör grapplinggenren. Rörlighet, teknik och smidighet!', 
+           'Klädsel/utrustning: Träningskläder utan dragkedjor eller för stora fickor, tandskydd. Vi tränar barfota. Suspensoar rekommenderas till killar. Vattenflaska krävs till alla pass.'], 
         imgSrc: grappling 
     },
     { title: "Striking", 
-        desc: "Striking är ett samlingsnamn för stående kamp och sammanfattar sporter såsom boxning, kickboxning och thaiboxning. I MMA tillåts man slåss med slag, sparkar, knän och i proffsmatcher även armbågar. För nybörjare tränar vi mycket på grundtekniker, kombinationer och försvar mot sparkar, slag, knän och svep.", 
+        desc: ["Striking är ett samlingsnamn för stående kamp och sammanfattar sporter såsom boxning, kickboxning och thaiboxning. I MMA tillåts man använda slag, sparkar, knän. För nybörjare tränar vi mycket på grundtekniker, kombinationer och försvar mot sparkar, slag, knän och svep."],
         imgSrc: striking2 
     },
     { title: "Företag, event, privatpass", 
-        desc: "Vi erbjuder allt från privatpass, företagsklasser, privata gruppass, skolklasser och träning vid svensexa/möhippa. Vi skräddarsyr pass efter individer eller grupper beroende på nivån och ambitionen på de närvarande. Vill du testa på MMA med fokus på kondition och styrka? Roliga, intensiva och positivt utmanande träningspass alltid ledda utav utbildade tränare. Då får du gärna höra av dig till oss så ordnar vi ett event som passar er!", 
+        desc: ['PRIVATPASS FÖRETAGSKLASSER SVENSEXA/MÖHIPPA Vi erbjuder allt från privatpass, företagsklasser, privata gruppass, skolklasser och träning vid svensexa/möhippa.', 
+          'PRIVATPASS Privatpass /individuell träning. Träna enskilt med någon av våra rutinerade tränare. Enbart fokus på utövaren och den individuella utvecklingen. Passar samtliga ambitionsnivåer, oavsett om det är motionsnivå/nybörjare eller satsande utövande och du vill träna ett pass enskilt med tränare. Skräddarsydda program efter önskemål.',
+          'FÖRETAGSKLASS/KICKOFFER/PRIVATA GRUPPASS Testa våra populära motionsanpassade MMA pass med arbetslaget, kompisgänget eller kollegorna. Fokus på kondition och styrka. Roliga, intensiva och positivt utmanande träningspass. Skräddarsytt pass efter önskemål. Lett av erfarna instruktörer med personlig tränarutbildning.', 
+          'SVENSEXA/MÖHIPPA/FÖDELSEDAG Någon som fyller jämnt eller gifter sig? Låt den utvalde testa sig genom att träna/sparra MMA tillsammans med något av våra proffs och träna ett MMA pass. Vi står för utrustning som krävs vid träningen. För mer info om passen eller vid frågor kontakta oss via orebrofightgym@outlook.com'],
         imgSrc: mood 
     }
   ];
@@ -63,9 +73,13 @@ function Classes() {
       <ul className="courses-ul highlight shadow">
         {courses.map((course, index) => (
           <li key={index} onClick={() => toggleDisplay(index, course.imgSrc)}>
-            {course.title}
+            <span className={(openIndex === index ? 'subheader' : '')}>{course.title}</span>
             {openIndex === index && (
-              <p className="course-description">{course.desc}</p>
+              course.desc.map((desc, descIndex) => {
+                return(
+                  <p key={descIndex + 'd'} className="course-description">{desc}</p>
+                );
+              })
             )}
           </li>
         ))}

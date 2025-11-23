@@ -110,6 +110,10 @@ nav a:hover {
   flex-direction: column;
 }
 
+.subheader {
+  color: #b8893d;
+}
+
 .classes-container {
   flex: 1;
   background-size: cover;
@@ -120,6 +124,7 @@ nav a:hover {
 .text-content {
   margin: 20px auto;
   padding: 0 1rem;
+  margin-bottom: 40px!important;
   width: 100%;
   max-width: 100%;
 }

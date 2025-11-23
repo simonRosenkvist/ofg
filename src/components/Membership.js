@@ -1,11 +1,11 @@
 import "./membership.css";
-import img from '../assets/group4.jpg';
+import img from '../assets/cage.jpeg';
 function Membership() {
     return (
         <div className="membership">
             <h1>Medlemskap</h1>
             <p className="subheader highlight">Bli en av oss!</p>
-            <p className="center">Som medlem hos Örebro Fight Gym får du ta del av professionella tränare ambitiösa träningskompisar och en god stämning. Hos oss är alla välkomna så länge du är en schysst träningskompis. Vi erbjuder flera pass i veckan och för den som vill bli bäst har vi några av landets bästa fighters som tränar hos oss.</p>
+            <p className="center">Som medlem hos Örebro Fight Gym får du ta del av ambitiösa tränare och god stämning. Vi erbjuder flera pass i veckan och för den som vill bli bäst har vi några av landets bästa fighters som tränar hos oss.</p>
             <img className="memberImage" src={img}></img>
             <h2 className="center">Priser:</h2>
             <h3 className="center highlight smallHeader">Vuxen (gäller från året man fyller 20)</h3>

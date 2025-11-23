@@ -1,7 +1,7 @@
     import "./aboutUs.css";
-    import img1 from '../assets/patrik.jpg';
+    import img1 from '../assets/pro-41c0iPHr.jpeg';
     import img2 from '../assets/shirt.jpg';
-    import img3 from '../assets/w-striking3.jpg';
+    import img3 from '../assets/team.jpeg';
 
     function AboutUs() {
         return (

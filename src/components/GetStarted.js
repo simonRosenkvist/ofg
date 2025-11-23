@@ -1,5 +1,5 @@
 import './getStarted.css';
-import img1 from '../assets/group4.jpg';
+import img1 from '../assets/mainimage.jpg';
 
 function GetStarted() {
     return (
